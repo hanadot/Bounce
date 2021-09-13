@@ -35,8 +35,19 @@ function draw() {
   y = y + speedY;
 
   if (y === 720){
-    speedY= speedY - 1;
+    speedY= speedY *- 1;
+  }
 
+  if (y === 0) {
+    speedY = speedY *-1;
+  }
 
+  if (x === 1280) {
+    speedX = speedX *-1;
+
+  }
+
+  if (x === 0){
+    speedX = speedX *- 1;
   }
 }
